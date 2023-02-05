@@ -1,0 +1,39 @@
+<!-- Write a Javvscript program to find largest of three given integers -->
+
+<html>
+    <head>
+        <title>Program 11</title>
+    </head>
+    <label for="a">Enter a value</label>
+    <input type="text" id="a"><br><br>
+
+    <label for="b">Enter b value</label>
+    <input type="text" id="b"><br><br>
+
+    <label for="c">Enter c value</label>
+    <input type="text" id="c"><br><br>
+
+    <button type="submit" onclick="largest()">Result</button>
+    <h2 id="result"></h2>
+    <script>
+        function largest()
+        {
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            var c = parseInt(document.getElementById("c").value);
+;
+            if (a > b && a > c)
+            {
+                document.getElementById("result").innerHTML = "Largest number is a : " + (a);
+            }
+            else if(b > c)
+            {
+                document.getElementById("result").innerHTML = "Largest number is b : " + (b);
+            }
+            else
+            {
+                document.getElementById("result").innerHTML = "Largest number is c : " + (c);
+            }
+        }
+    </script>
+</html>
